@@ -139,6 +139,67 @@ body {
 	opacity: 0;
 }
 
+/** 팝업 **/
+.popup-wrap {
+	width: 310px;
+	height: 280px;
+	background: #000;
+	position: absolute;
+	box-shadow: 2px 2px 10px #fff;
+	z-index: 2000000;
+	transform: translateX(-50%);
+	left: 50%;
+	top: 40px;
+	display: none;
+}
+
+.popup-title {
+	padding: 17px 0;
+	border-bottom: 2px dotted #fff;
+}
+
+.popup-title > h1 {
+	color: #fff;
+	text-align: center;
+}
+
+.popup-content-wrap {
+	padding: 30px;
+	line-height: 35px;
+}
+
+.popup-content-wrap > p {
+	color: #fff;
+	font-size: 1.5rem;
+}
+
+.popup-close-wrap {
+	padding: 17px 0 0 0;
+	border-top: 2px dotted #fff;
+}
+
+.popup-check-wrap {
+	padding: 0 10px; 
+}
+
+.popup-check-wrap > label {
+	color: #fff;
+	display: inline-block;
+	font-size: 1.3rem;
+	line-height: 15px;
+	padding: 3px;
+}
+
+.popup-button-wrap {
+	margin-left: 120px;
+}
+
+.popup-button-wrap > button {
+	padding: 0 5px;
+	background: rgba(0, 0, 0, 0.7);
+	color: #fff;
+}	
+
 /** 섹션1 **/
 .section1-wrap {
 	display: flex;

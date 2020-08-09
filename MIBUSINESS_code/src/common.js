@@ -1,4 +1,16 @@
 $(function() {
+	/** 팝업창 쿠키 처리 **/
+	var popupCookie = getCookie("oneDay");
+	if(!popupCookie || popupCookie != "yes") {
+		$(".popup-wrap").fadeIn();
+	}
+	$(".popup-close-btn").on("click",function() {
+		var checked= $("#popup-check").prop("checked");
+		if (checked) {
+			setCookie("oneDay", "yes" ,1);
+		}
+		$(".popup-wrap").fadeOut();
+	}); 
 	/** 헤더 햄버거 메뉴 클릭시 메뉴 오픈 **/
 	$(".hamburger-menu-wrap").on("click",function(){
 		$(this).children().eq(0).toggleClass("top-line");

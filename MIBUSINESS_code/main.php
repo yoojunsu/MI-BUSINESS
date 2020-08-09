@@ -1,3 +1,22 @@
+<div class="popup-wrap">
+	<div class="popup-title">
+		<h1>MI BUSINESS</h1>
+	</div>
+	<div class="popup-content-wrap">
+		<p>
+			해당 사이트는 갤러리에 담아내지 못한 프로젝트의 다양한 부분을 담아내기 위해 제작 되었습니다.
+		</p>
+	</div>
+	<div class="popup-close-wrap">
+		<span class="popup-check-wrap">
+			<input type="checkbox" id="popup-check" />
+			<label for="popup-check">하루동안 보지않기</label>
+		</span>
+		<span class="popup-button-wrap">
+			<button class="popup-close-btn">닫기</button>
+		</span>
+	</div>
+</div>
 <div class="section1-wrap">
 	<div class="section1-content1">
 		<img src="/img/main2-3.jpg" alt="섹션 이미지" />
