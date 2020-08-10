@@ -1,4 +1,15 @@
 $(function() {
+	/****************************
+	 *** IE 접속 불가 코드
+	 ****************************/ 
+	var agent = navigator.userAgent.toLowerCase();
+	if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+	 location.href = "/noie.html";
+	}
+	else {
+	  console.log("it's not IE");
+	}
+		
 	/** 팝업창 쿠키 처리 **/
 	var popupCookie = getCookie("oneDay");
 	if(!popupCookie || popupCookie != "yes") {
